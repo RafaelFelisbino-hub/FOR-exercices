@@ -21,7 +21,7 @@ int main()
 	{
 		if (i % 2 == 0) 
 		{
-			soma++;
+			soma += i;
 		}
 	}
 	printf("\nO resultado da soma dos números pares é:  %i\n\n", soma);
