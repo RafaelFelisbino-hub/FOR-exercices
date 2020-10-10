@@ -19,29 +19,15 @@ int main()
 	printf("\nDigite o valor de N2:  ");
 	scanf_s("%i", &N2);
 
-	printf("\nDigite quantas vezes você quer repetir os números:  ");
-	scanf_s("%i", &r);
-
-	for (i =0 ; i <= r; i++)
+	for (i =N1++ ; i < N2; i++)
 	{
-		printf("\n%d - Digite os números sem repetir o valor de N1 e N2, os números devem estar entre N1 e N2:  ",i);
-		scanf_s("%i", &n3);
-
-		if (n3 > N1 && n3 < N2) 
+		if (i % 2 == 1) 
 		{
-			if(i % 2 == 1)
 			impar++;
 		}
-		else
-		{
-			printf("Valor errado, deve estar entre N1 e N2\n");
-			break;
-		}
+		
 	}
-
-
-	printf("\nExistem %i numeros ímpares entre N1 e N2 mano, ÉOBIXO\n", impar);
+	printf("\nExistem %i numeros Ã­mpares entre N1 e N2 mano, Ã‰OBIXO\n", impar);
 
 	system("pause");
-
 }
