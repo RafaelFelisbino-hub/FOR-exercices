@@ -17,7 +17,7 @@ int main()
 	printf("\nDigite o valor de N2:  ");
 	scanf_s("%i", &N2);
 	
-	for (i = N1++; i < N2; i++)
+	for (i = N1; i < N2; i++)
 	{
 		if (i % 2 == 0) 
 		{
