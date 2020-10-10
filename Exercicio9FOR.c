@@ -11,13 +11,7 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	system("color 17");
 
-	printf("Digite o valor de N1:  ");
-	scanf_s("%i", &N1);
-
-	printf("\nDigite o valor de N2:  ");
-	scanf_s("%i", &N2);
-	
-	for (i = N1; i < N2; i++)
+	for (i = 0; i < 1000; i++)
 	{
 		if (i % 2 == 0) 
 		{
