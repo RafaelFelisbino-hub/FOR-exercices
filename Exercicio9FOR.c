@@ -6,36 +6,25 @@
 
 int main() 
 {
-	int soma = 0, num, i, N;
+	int soma = 0, num = 0, i, N1, N2;
 	
 	setlocale(LC_ALL, "Portuguese");
 	system("color 17");
 
-	printf("Escreva quantas vezes você quer somar os números pares:  ");
-	scanf_s("%i", &N);
-	
-	for (i = 0; i < N; i++)
-	{
-		printf("\n%d - Informe os números:  ",i);
-		scanf_s("%i", &num);
+	printf("Digite o valor de N1:  ");
+	scanf_s("%i", &N1);
 
-		if (num >= 0 && num <= 1000)
-		{
-			if (num % 2 == 0) 
-			{
-				soma += num;
-			}
-			
-		}
-		
-	}
+	printf("\nDigite o valor de N2:  ");
+	scanf_s("%i", &N2);
 	
-	printf("\nO resultado da soma dos números pares é:  %i\n\n", soma);
+	for (i = N1++; i < N2; i++)
+	{
+		if (i % 2 == 0) 
+		{
+				soma++;
+		}
+	}
+	printf("\nO resultado da soma dos nÃºmeros pares Ã©:  %i\n\n", soma);
 
 	system("pause");
-
-
-
-
-
 }
